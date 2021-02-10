@@ -1,4 +1,5 @@
 import { FC, ReactElement } from 'react';
+import Header from './components/Header';
 import Nova from './components/Nova';
 import Revan from './components/Revan';
 import PuppyCollage from './components/PuppyCollage';
@@ -13,9 +14,7 @@ const App: FC = (): ReactElement => {
 
   return (
     <>
-      <header className='title'>
-        <h1>Select a Puppy!</h1>
-      </header>
+      <Header/>
       <PuppyCollage options={data}/>
     </>
   );

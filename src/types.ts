@@ -1,11 +1,9 @@
-import { ReactNode, FC } from 'react';
+import { FC } from 'react';
 
 export interface IPuppy {
   name: string;
   component: FC;
 };
 
-export interface IProps {
-  options: IPuppy[];
-};
+
 

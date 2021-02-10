@@ -1,0 +1,10 @@
+.dog-btn {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.dog-btn:hover {
+  cursor: pointer;
+}

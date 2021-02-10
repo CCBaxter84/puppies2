@@ -1,4 +1,5 @@
-import { FC, ReactElement, ReactNode } from 'react';
+import { FC, ReactElement } from 'react';
+import './ButtonToggle.css';
 
 interface IProps {
   toggleForm: () => void;
@@ -6,7 +7,7 @@ interface IProps {
 
 const ButtonToggle:FC<IProps> = ({ toggleForm, children }): ReactElement => {
   return (
-    <button onClick={() => toggleForm()}>
+    <button className='dog-btn btn' onClick={() => toggleForm()}>
       {children}
     </button>
   );
