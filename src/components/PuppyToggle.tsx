@@ -1,4 +1,5 @@
-import { FC, ReactElement, ReactNode } from 'react';
+import { FC, ReactElement } from 'react';
+import './PuppyCollage.css';
 
 interface IProps {
   currentIndex: number;
@@ -7,7 +8,7 @@ interface IProps {
 const PuppyToggle: FC<IProps> = ({ currentIndex, children}): ReactElement | null => {
   if (Array.isArray(children)) {
     return (
-      <section>{children[currentIndex]}</section>
+      <>{children[currentIndex]}</>
     );
   } else {
     return null;

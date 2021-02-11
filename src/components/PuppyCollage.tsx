@@ -25,7 +25,7 @@ const PuppyCollage: FC<IProps> = ({options}): ReactElement => {
       <PuppyToggle currentIndex={currentForm}>
         {options.map((el, index) => {
           return (
-            <section key={`form${index}`}>
+            <section className='photo-collage' key={`form${index}`}>
               {createElement(el.component)}
             </section>
           );
