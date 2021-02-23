@@ -1,4 +1,4 @@
-import { FC, ReactElement } from 'react';
+import { FC, ReactElement, memo } from 'react';
 import HappyNova from '../pictures/HappyNova.jpg';
 import NovaBeanbag from '../pictures/Nova-Beanbag.jpg';
 import QueenNova from '../pictures/Queen-Nova.jpg';
@@ -11,7 +11,7 @@ const Nova: FC = (): ReactElement => {
   return (
     <>
       <article className='big'>
-        <img className='puppy-photo big' src={HappyNova} alt="smiling white shichon puppy"/>
+        <img className='puppy-photo' src={HappyNova} alt="smiling white shichon puppy"/>
       </article>
       <article className='horizontal'>
         <img className='puppy-photo' src={NovaBeanbag}/>
@@ -32,4 +32,4 @@ const Nova: FC = (): ReactElement => {
   );
 };
 
-export default Nova;
+export default memo(Nova);

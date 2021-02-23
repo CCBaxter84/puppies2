@@ -25,11 +25,18 @@
   grid-column: span 5;
   grid-row: span 8;
 }
-
+.puppy-photo {
+  border: 2px solid purple;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+/*
 .puppy-photo {
   border-radius: 5px;
   border: 2px solid purple;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: top left;
   width: 100%;
-}
+}*/

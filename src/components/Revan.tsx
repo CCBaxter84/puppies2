@@ -1,4 +1,4 @@
-import { FC, ReactElement } from 'react';
+import { FC, ReactElement, memo } from 'react';
 import './PuppyCollage.css';
 import PupRevan from '../pictures/Pup-Revan.jpg';
 import PuppyRevan from '../pictures/Puppy-Revan.jpg';
@@ -36,4 +36,4 @@ const Revan: FC = (): ReactElement => {
   );
 };
 
-export default Revan;
+export default memo(Revan);
