@@ -12,7 +12,7 @@ const Revan: FC = (): ReactElement => {
   return (
     <>
       <article className='vertical'>
-        <img className='puppy-photo big' src={HomerRevan} alt="smiling white shichon puppy"/>
+        <img className='puppy-photo' src={HomerRevan} alt="smiling white shichon puppy"/>
       </article>
       <article className='big'>
         <img className='puppy-photo' src={RevanPic}/>
@@ -37,3 +37,4 @@ const Revan: FC = (): ReactElement => {
 };
 
 export default memo(Revan);
+
